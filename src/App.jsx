@@ -1,6 +1,9 @@
 import Card from "./Components/Card"
 import Navbar from "./Components/Navbar"
+import Technology from "./Components/Technology"
 import img from "./assets/image1.png"
+import github from "./assets/github.png"
+import linkedin from "./assets/linkedin.png"
 const data = [
   {
     title: "PROJECT 1",
@@ -36,6 +39,55 @@ function App() {
             ))}
           </div>
         </section>
+        <section>
+          <h1 className="title">Technologies</h1>
+          <div className="technologies">
+            <Technology name={"HTML"} level={"Advanced"} />
+            <Technology name={"CSS"} level={"Advanced"} />
+            <Technology name={"Javascript"} level={"Advanced"} />
+            <Technology name={"React"} level={"Intermediate"} />
+          </div>
+          <div className="additional-technologies">
+            <h2>Additional Technologies</h2>
+            <ul className="techno-list">
+              <li>Quick Learning</li>
+              <li>Git</li>
+              <li>Github</li>
+              <li>Teamwork</li>
+              <li>Engagement</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </section>
+        <section className="about">
+          <h1>About me</h1>
+          <div className="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              sint natus blanditiis placeat iste accusantium iure neque
+              asperiores consequuntur ipsam, accusamus fugiat omnis, mollitia
+              alias hic similique, eius saepe. Consequatur!
+            </p>
+          </div>
+        </section>
+        <footer className="footer">
+          <div>
+            <p>Call me:</p>
+            <p>123-456</p>
+          </div>
+          <div>
+            <p>Email</p>
+            <p>someone@something.com</p>
+          </div>
+          <div className="icons">
+            <a href="#">
+              <img src={github} alt="github" className="icon" />
+            </a>
+            <a href="#">
+              <img src={linkedin} alt="linkedin" className="icon" />
+            </a>
+          </div>
+        </footer>
       </div>
     </>
   )

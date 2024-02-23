@@ -29,6 +29,7 @@ h1 {
   font-weight: var(--font-w2);
 }
 button {
+  cursor: pointer;
   font-weight: var(--font-w2);
 }
 /* container styling */
@@ -97,6 +98,61 @@ button {
 }
 .projects .project-cards p {
   width: 15rem;
+}
+/* technologies section */
+.technologies {
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem 15rem;
+}
+.technologies .technology {
+  background-color: var(--box-clr1);
+  height: 0.9rem;
+  border-radius: 1.5em;
+  position: relative;
+}
+.technologies .technology .bar-length {
+  border-radius: 1.5em;
+  height: 100%;
+  background-color: var(--btn-clr1);
+}
+.technologies .technology .name,
+.level {
+  position: absolute;
+}
+.technologies .technology .name {
+  bottom: 0;
+  left: 5%;
+}
+.technologies .technology .level {
+  bottom: 0;
+  right: 5%;
+}
+.techno-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.5rem 15rem;
+}
+/* About me section */
+.about .description {
+  padding: 1.5rem 15rem;
+}
+/* Footer section */
+.footer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.footer .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer .icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 /* custom styles */
 .btn {
