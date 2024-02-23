@@ -114,7 +114,12 @@ button {
 .technologies .technology .bar-length {
   border-radius: 1.5em;
   height: 100%;
-  background-color: var(--btn-clr1);
+  background-image: linear-gradient(
+    to left,
+    var(--btn-clr1) 10%,
+    var(--btn-clr2),
+    var(--btn-clr3)
+  );
 }
 .technologies .technology .name,
 .level {
@@ -160,7 +165,12 @@ button {
   border: none;
   border-radius: 5em;
   color: var(--font-clr-base);
-  background-color: var(--btn-clr1);
+  background-image: linear-gradient(
+    to left,
+    var(--btn-clr1) 10%,
+    var(--btn-clr2),
+    var(--btn-clr3)
+  );
   padding: 0.75em 2.25em;
 }
 .card {
